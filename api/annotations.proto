@@ -17,6 +17,7 @@ syntax = "proto3";
 package micro.api;
 
 import "api/http.proto";
+import "api/micro.proto";
 import "google/protobuf/descriptor.proto";
 
 option go_package = "github.com/unistack-org/micro-proto/api;api";
@@ -28,4 +29,14 @@ option objc_class_prefix = "MAPI";
 extend google.protobuf.MethodOptions {
   // See `HttpRule`.
   HttpRule http = 72295728;
+}
+
+extend google.protobuf.MethodOptions {
+  // See `MicroMethod`.
+  MicroMethod micro_method = 65535655;
+}
+
+extend google.protobuf.ServiceOptions {
+  // See `MicroService`
+  MicroService micro_service = 65535655;
 }
