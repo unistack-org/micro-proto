@@ -97,7 +97,7 @@ message Swagger {
   // service objects into OpenAPI v2 Tag objects.
   reserved 13;
   // Additional external documentation.
-  ExternalDocumentation external_docs = 14;
+  ExternalDocs external_docs = 14;
   map<string, google.protobuf.Value> extensions = 15;
 }
 
@@ -137,7 +137,7 @@ message Operation {
   // rich text representation.
   string description = 3;
   // Additional external documentation for this operation.
-  ExternalDocumentation external_docs = 4;
+  ExternalDocs external_docs = 4;
   // Unique string used to identify the operation. The id MUST be unique among
   // all operations described in the API. Tools and libraries MAY use the
   // operationId to uniquely identify an operation, therefore, it is recommended
@@ -299,16 +299,6 @@ message Info {
 //    ...
 //  };
 //
-message Contact {
-  // The identifying name of the contact person/organization.
-  string name = 1;
-  // The URL pointing to the contact information. MUST be in the format of a
-  // URL.
-  string url = 2;
-  // The email address of the contact person/organization. MUST be in the format
-  // of an email address.
-  string email = 3;
-}
 
 // `License` is a representation of OpenAPI v2 specification's License object.
 //
@@ -328,15 +318,8 @@ message Contact {
 //    ...
 //  };
 //
-message License {
-  // The license name used for the API.
-  string name = 1;
-  // A URL to the license used for the API. MUST be in the format of a URL.
-  string url = 2;
-}
 
-// `ExternalDocumentation` is a representation of OpenAPI v2 specification's
-// ExternalDocumentation object.
+// ExternalDocs object.
 //
 // See: https://github.com/OAI/OpenAPI-Specification/blob/3.0.0/versions/2.0.md#externalDocumentationObject
 //
@@ -351,14 +334,6 @@ message License {
 //    ...
 //  };
 //
-message ExternalDocumentation {
-  // A short description of the target documentation. GFM syntax can be used for
-  // rich text representation.
-  string description = 1;
-  // The URL for the target documentation. Value MUST be in the format
-  // of a URL.
-  string url = 2;
-}
 
 // `Schema` is a representation of OpenAPI v2 specification's Schema object.
 //
@@ -381,7 +356,7 @@ message Schema {
   // field 4 is reserved for 'xml'.
   reserved 4;
   // Additional external documentation for this schema.
-  ExternalDocumentation external_docs = 5;
+  ExternalDocs external_docs = 5;
   // A free-form property to include an example of an instance for this schema in JSON.
   // This is copied verbatim to the output.
   string example = 6;
@@ -525,7 +500,7 @@ message Tag {
   // representation.
   string description = 2;
   // Additional external documentation for this tag.
-  ExternalDocumentation external_docs = 3;
+  ExternalDocs external_docs = 3;
 }
 
 // `SecurityDefinitions` is a representation of OpenAPI v2 specification's

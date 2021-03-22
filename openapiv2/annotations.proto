@@ -5,14 +5,14 @@ package micro.openapiv2;
 option go_package = "github.com/unistack-org/micro-proto/openapiv2;openapiv2";
 
 import "google/protobuf/descriptor.proto";
-import "openapiv2/openapiv2.proto";
+import "openapiv2/gopenapiv2.proto";
 
 extend google.protobuf.FileOptions {
   // ID assigned by protobuf-global-extension-registry@google.com for gRPC-Gateway project.
   //
   // All IDs are the same, as assigned. It is okay that they are the same, as they extend
   // different descriptor messages.
-  Swagger openapiv2_swagger = 1042;
+  Document openapiv2_swagger = 1042;
 }
 extend google.protobuf.MethodOptions {
   // ID assigned by protobuf-global-extension-registry@google.com for gRPC-Gateway project.
@@ -40,5 +40,5 @@ extend google.protobuf.FieldOptions {
   //
   // All IDs are the same, as assigned. It is okay that they are the same, as they extend
   // different descriptor messages.
-  JSONSchema openapiv2_field = 1042;
+  Schema openapiv2_field = 1042;
 }
