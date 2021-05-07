@@ -1,4 +1,4 @@
-// Copyright (c) 2015, Google Inc.
+// Copyright 2020 Unistack LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,29 +14,24 @@
 
 syntax = "proto3";
 
-package micro.api;
+package micro.tag;
 
-import "api/http.proto";
-import "api/micro.proto";
 import "google/protobuf/descriptor.proto";
 
-option go_package = "github.com/unistack-org/micro-proto/api;api";
+option cc_enable_arenas = true;
+option go_package = "github.com/unistack-org/micro-proto/tag;tag";
 option java_multiple_files = true;
-option java_outer_classname = "AnnotationsProto";
-option java_package = "micro.api";
-option objc_class_prefix = "MAPI";
+option java_outer_classname = "MicroProto";
+option java_package = "micro.tag";
+option objc_class_prefix = "MTAG";
 
-extend google.protobuf.MethodOptions {
-  // See `HttpRule`.
-  HttpRule http = 72295728;
+// Tags are applied at the field level
+extend google.protobuf.FieldOptions {
+  // Multiple Tags can be spcified.
+  string tags = 847939;
 }
 
-extend google.protobuf.MethodOptions {
-  // See `MicroMethod`.
-  MicroMethod micro_method = 65535655;
-}
-
-extend google.protobuf.ServiceOptions {
-  // See `MicroService`
-  MicroService micro_service = 65535655;
+extend google.protobuf.OneofOptions {
+  // Multiple Tags can be spcified.
+  string oneof_tags = 847939;
 }
