@@ -37,7 +37,7 @@ extend google.protobuf.FieldOptions {
   //   google.protobuf.Timestamp expire_time = 1
   //     [(google.api.field_behavior) = OUTPUT_ONLY,
   //      (google.api.field_behavior) = IMMUTABLE];
-  repeated micro.api.FieldBehavior field_behavior = 1052;
+  repeated micro.api.FieldBehavior field_behavior = 651052;
 }
 
 // An indicator of the behavior of a given field (for example, that a field
