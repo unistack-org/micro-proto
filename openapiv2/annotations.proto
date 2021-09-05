@@ -12,33 +12,33 @@ extend google.protobuf.FileOptions {
   //
   // All IDs are the same, as assigned. It is okay that they are the same, as they extend
   // different descriptor messages.
-  Document openapiv2_swagger = 1042;
+  Document openapiv2_swagger = 847940;
 }
 extend google.protobuf.MethodOptions {
   // ID assigned by protobuf-global-extension-registry@google.com for gRPC-Gateway project.
   //
   // All IDs are the same, as assigned. It is okay that they are the same, as they extend
   // different descriptor messages.
-  Operation openapiv2_operation = 1042;
+  Operation openapiv2_operation = 847940;
 }
 extend google.protobuf.MessageOptions {
   // ID assigned by protobuf-global-extension-registry@google.com for gRPC-Gateway project.
   //
   // All IDs are the same, as assigned. It is okay that they are the same, as they extend
   // different descriptor messages.
-  Schema openapiv2_schema = 1042;
+  Schema openapiv2_schema = 847940;
 }
 extend google.protobuf.ServiceOptions {
   // ID assigned by protobuf-global-extension-registry@google.com for gRPC-Gateway project.
   //
   // All IDs are the same, as assigned. It is okay that they are the same, as they extend
   // different descriptor messages.
-  Tag openapiv2_tag = 1042;
+  Tag openapiv2_tag = 847940;
 }
 extend google.protobuf.FieldOptions {
   // ID assigned by protobuf-global-extension-registry@google.com for gRPC-Gateway project.
   //
   // All IDs are the same, as assigned. It is okay that they are the same, as they extend
   // different descriptor messages.
-  Schema openapiv2_field = 1042;
+  Schema openapiv2_field = 847940;
 }
