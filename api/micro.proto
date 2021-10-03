@@ -17,7 +17,7 @@ syntax = "proto3";
 package micro.api;
 
 option cc_enable_arenas = true;
-option go_package = "github.com/unistack-org/micro-proto/api;api";
+option go_package = "go.unistack.org/micro-proto/v3/api;api";
 option java_multiple_files = true;
 option java_outer_classname = "MicroProto";
 option java_package = "micro.api";

@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package micro.openapiv2;
 
-option go_package = "github.com/unistack-org/micro-proto/openapiv2;openapiv2";
+option go_package = "go.unistack.org/micro-proto/v3/openapiv2;openapiv2";
 
 import "google/protobuf/descriptor.proto";
 import "openapiv2/gopenapiv2.proto";

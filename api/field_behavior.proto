@@ -18,7 +18,7 @@ package micro.api;
 
 import "google/protobuf/descriptor.proto";
 
-option go_package = "github.com/unistack-org/micro-proto/api;api";
+option go_package = "go.unistack.org/micro-proto/v3/api;api";
 option java_multiple_files = true;
 option java_outer_classname = "FieldBehaviorProto";
 option java_package = "micro.api";
