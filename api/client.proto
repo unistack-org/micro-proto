@@ -34,7 +34,7 @@ extend google.protobuf.ServiceOptions {
   //     option (google.api.default_host) = "foo.googleapi.com";
   //     ...
   //   }
-  string default_host = 1049;
+  string default_host = 65535657;
 
   // OAuth scopes needed for the client.
   //
@@ -56,5 +56,5 @@ extend google.protobuf.ServiceOptions {
   //       "https://www.googleapis.com/auth/monitoring";
   //     ...
   //   }
-  string oauth_scopes = 1050;
+  string oauth_scopes = 65535658;
 }
