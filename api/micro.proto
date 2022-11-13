@@ -27,7 +27,7 @@ option objc_class_prefix = "MAPI";
 // [MicroMethod][micro.api.MicroMethod]
 message MicroMethod {
   // Timeout for handler
-  int32 timeout = 1;
+  string timeout = 1;
   // ServerOptions contains options for server
   repeated string server_options = 2;
   // ClientOptions contains options for client
