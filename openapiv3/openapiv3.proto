@@ -32,7 +32,7 @@ option java_multiple_files = true;
 option java_outer_classname = "OpenAPIProto";
 
 // The Java package name must be proto package name with proper prefix.
-option java_package = "micro.openapiv3";
+option java_package = "org.openapi_v3";
 
 // A reasonable prefix for the Objective-C symbols generated from the package.
 // It should at a minimum be 3 characters long, all uppercase, and convention
@@ -42,7 +42,7 @@ option java_package = "micro.openapiv3";
 option objc_class_prefix = "OAS";
 
 // The Go package name.
-option go_package = "github.com/unistack-org/micro-proto/openapiv3;openapiv3";
+option go_package = "go.unistack.org/micro-proto/v4/openapiv3;openapiv3";
 
 message AdditionalPropertiesItem {
   oneof oneof {
@@ -667,3 +667,4 @@ message Xml {
   bool wrapped = 5;
   repeated NamedAny specification_extension = 6;
 }
+

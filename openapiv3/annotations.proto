@@ -1,44 +1,44 @@
 syntax = "proto3";
 
-package micro.openapiv2;
+package micro.openapiv3;
 
-option go_package = "go.unistack.org/micro-proto/v4/openapiv2;openapiv2";
+option go_package = "go.unistack.org/micro-proto/v4/openapiv3;openapiv3";
 
 import "google/protobuf/descriptor.proto";
-import "openapiv2/openapiv2.proto";
+import "openapiv3/openapiv3.proto";
 
 extend google.protobuf.FileOptions {
   // ID assigned by protobuf-global-extension-registry@google.com for gRPC-Gateway project.
   //
   // All IDs are the same, as assigned. It is okay that they are the same, as they extend
   // different descriptor messages.
-  Document openapiv2_swagger = 847940;
+  Document openapiv3_swagger = 847941;
 }
 extend google.protobuf.MethodOptions {
   // ID assigned by protobuf-global-extension-registry@google.com for gRPC-Gateway project.
   //
   // All IDs are the same, as assigned. It is okay that they are the same, as they extend
   // different descriptor messages.
-  Operation openapiv2_operation = 847940;
+  Operation openapiv3_operation = 847941;
 }
 extend google.protobuf.MessageOptions {
   // ID assigned by protobuf-global-extension-registry@google.com for gRPC-Gateway project.
   //
   // All IDs are the same, as assigned. It is okay that they are the same, as they extend
   // different descriptor messages.
-  Schema openapiv2_schema = 847940;
+  Schema openapiv3_schema = 847941;
 }
 extend google.protobuf.ServiceOptions {
   // ID assigned by protobuf-global-extension-registry@google.com for gRPC-Gateway project.
   //
   // All IDs are the same, as assigned. It is okay that they are the same, as they extend
   // different descriptor messages.
-  Tag openapiv2_tag = 847940;
+  Tag openapiv3_tag = 847941;
 }
 extend google.protobuf.FieldOptions {
   // ID assigned by protobuf-global-extension-registry@google.com for gRPC-Gateway project.
   //
   // All IDs are the same, as assigned. It is okay that they are the same, as they extend
   // different descriptor messages.
-  Schema openapiv2_field = 847940;
+  Schema openapiv3_field = 847941;
 }

@@ -1,4 +1,4 @@
-// Copyright 2020 Unistack LLC
+// Copyright 2021 Unistack LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,24 +14,18 @@
 
 syntax = "proto3";
 
-package micro.tag;
-
-import "google/protobuf/descriptor.proto";
+package micro.errors;
 
 option cc_enable_arenas = true;
-option go_package = "go.unistack.org/micro-proto/v3/tag;tag";
+option go_package = "go.unistack.org/micro-proto/v3/errors;errors";
 option java_multiple_files = true;
-option java_outer_classname = "MicroProto";
-option java_package = "micro.tag";
-option objc_class_prefix = "MTAG";
+option java_outer_classname = "MicroErrors";
+option java_package = "micro.errors";
+option objc_class_prefix = "MERRORS";
 
-// Tags are applied at the field level
-extend google.protobuf.FieldOptions {
-  // Multiple Tags can be spcified.
-  string tags = 847939;
-}
-
-extend google.protobuf.OneofOptions {
-  // Multiple Tags can be spcified.
-  string oneof_tags = 847939;
+message Error {
+  string id = 1;
+  string detail = 2;
+  string status = 3;
+  uint32 code = 4;
 }
