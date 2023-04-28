@@ -15,7 +15,11 @@ jobs:
     steps:
       - name: metadata
         id: metadata
+<<<<<<< HEAD
         uses: dependabot/fetch-metadata@v1.3.6
+=======
+        uses: dependabot/fetch-metadata@v1.3.0
+>>>>>>> master
         with:
           github-token: "${{ secrets.TOKEN }}"
       - name: merge

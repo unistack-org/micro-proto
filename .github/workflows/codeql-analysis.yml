@@ -45,12 +45,21 @@ jobs:
     - name: checkout
       uses: actions/checkout@v3
     - name: setup
+<<<<<<< HEAD
       uses: actions/setup-go@v3
       with:
         go-version: 1.17
     # Initializes the CodeQL tools for scanning.
     - name: init
       uses: github/codeql-action/init@v2
+=======
+      uses: actions/setup-go@v2
+      with:
+        go-version: 1.16
+    # Initializes the CodeQL tools for scanning.
+    - name: init
+      uses: github/codeql-action/init@v1
+>>>>>>> master
       with:
         languages: ${{ matrix.language }}
         # If you wish to specify custom queries, you can do so here or in a config file.
@@ -61,7 +70,11 @@ jobs:
     # Autobuild attempts to build any compiled languages  (C/C++, C#, or Java).
     # If this step fails, then you should remove it and run the build manually (see below)
     - name: autobuild
+<<<<<<< HEAD
       uses: github/codeql-action/autobuild@v2
+=======
+      uses: github/codeql-action/autobuild@v1
+>>>>>>> master
 
     # ℹ️ Command-line programs to run using the OS shell.
     # 📚 https://git.io/JvXDl
@@ -75,4 +88,8 @@ jobs:
     #   make release
 
     - name: analyze
+<<<<<<< HEAD
       uses: github/codeql-action/analyze@v2
+=======
+      uses: github/codeql-action/analyze@v1
+>>>>>>> master

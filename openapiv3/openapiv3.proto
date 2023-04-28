@@ -42,7 +42,7 @@ option java_package = "org.openapi_v3";
 option objc_class_prefix = "OAS";
 
 // The Go package name.
-option go_package = "go.unistack.org/micro-proto/v3/openapiv3;openapiv3";
+option go_package = "go.unistack.org/micro-proto/v4/openapiv3;openapiv3";
 
 message AdditionalPropertiesItem {
   oneof oneof {
