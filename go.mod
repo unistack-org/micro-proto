@@ -1,4 +1,4 @@
-module go.unistack.org/micro-proto/v4
+module go.unistack.org/micro-proto/v3
 
 go 1.19
 
