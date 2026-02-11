@@ -1,6 +1,6 @@
 module go.unistack.org/micro-proto/v3
 
-go 1.24.6
+go 1.24.2
 
 require (
 	github.com/google/gnostic v0.6.9
