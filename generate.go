@@ -14,4 +14,4 @@ package main
 //go:generate protoc -I. -I./tag --go_out=paths=source_relative:. ./tag/tag.proto
 //go:generate protoc -I. -I./tag --go_out=paths=source_relative:. ./errors/errors.proto
 //go:generate protoc -I. -I./tag --go_out=paths=source_relative:. ./codec/frame.proto
-//go:generate protoc -I. -I./graphql --go_out=paths=source_relative:. ./graphql/graphql.proto
+////go:generate protoc -I. -I./graphql --go_out=paths=source_relative:. ./graphql/graphql.proto
