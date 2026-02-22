@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/google/gnostic v0.6.9
-	google.golang.org/protobuf v1.28.1
+	google.golang.org/protobuf v1.33.0
 	gopkg.in/yaml.v3 v3.0.1
 )
 
