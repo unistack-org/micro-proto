@@ -22,7 +22,7 @@ import (
 	"strings"
 
 	"github.com/google/gnostic/compiler"
-	"gopkg.in/yaml.v3"
+	"go.yaml.in/yaml/v3"
 )
 
 // Version returns the package name (and OpenAPI version).
