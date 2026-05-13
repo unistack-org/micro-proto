@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package micro.graphql;
 
-option go_package = "go.unistack.org/micro-proto/v4/graphql;graphql";
+option go_package = "go.unistack.org/micro-proto/v5/graphql;graphql";
 
 import "google/protobuf/descriptor.proto";
 

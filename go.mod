@@ -1,4 +1,4 @@
-module go.unistack.org/micro-proto/v4
+module go.unistack.org/micro-proto/v5
 
 go 1.24.6
 
