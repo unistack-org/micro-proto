@@ -9,5 +9,5 @@ require (
 
 require (
 	github.com/google/gnostic-models v0.7.1 // indirect
-	go.yaml.in/yaml/v3 v3.0.4
+	go.yaml.in/yaml/v3 v3.0.6
 )
